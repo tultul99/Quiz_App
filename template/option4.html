@@ -74,34 +74,38 @@
     
     <h1>Question 4</h1>
     
+    <form action="" method="POST">{% csrf_token %}
+
+        <p class="option">4. 'Zabur' holy book revealed on which prophet?</p>
     
-    <p class="option">4. 'Zabur' holy book revealed on which prophet?</p>
-    
-    <div class="options">
-        
-        <label class="container">1.
-            <input type="checkbox" value="Dawud">
-            <span class="checkmark">Dawud A.S</span>
-        </label>
+        <div class="options">
+            
+            <label class="container">1.
+                <input type="checkbox" name="ans1" value="Dawud">
+                <span class="checkmark">Dawud A.S</span>
+            </label>
 
-        <label class="container">2.
-            <input type="checkbox" value="Musa">
-            <span class="checkmark">Musa A.S</span>
-        </label>
+            <label class="container">2.
+                <input type="checkbox" name="ans2" value="Musa">
+                <span class="checkmark">Musa A.S</span>
+            </label>
 
-        <label class="container">3.
-            <input type="checkbox" value="Isa">
-            <span class="checkmark">Isa A.S</span>
-        </label>
+            <label class="container">3.
+                <input type="checkbox" name="ans3" value="Isa">
+                <span class="checkmark">Isa A.S</span>
+            </label>
 
-        <label class="container">4.
-            <input type="checkbox" value="Muhammad(S)">
-            <span class="checkmark">Muhammad (PBUH)</span>
-        </label>
-        
-    </div>
+            <label class="container">4.
+                <input type="checkbox" name="ans4" value="Muhammad(S)">
+                <span class="checkmark">Muhammad (PBUH)</span>
+            </label>
+            
+        </div>
 
     <button type="submit" class="btn btn-outline-light">Submit</button>
+        
+    </form>
+    
 
     <div class="row">
         <div class="col">

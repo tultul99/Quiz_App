@@ -74,34 +74,38 @@
     
     <h1>Question 5</h1>
     
+    <form action="" method="POST">{% csrf_token %}
     
-    <p class="option">5. Who lifted the 900 kg door?</p>
+        <p class="option">5. Who lifted the 900 kg door?</p>
     
-    <div class="options">
-        
-        <label class="container">1.
-            <input type="checkbox" value="Bakr">
-            <span class="checkmark">Abu Bakr R.</span>
-        </label>
+        <div class="options">
+            
+            <label class="container">1.
+                <input type="checkbox" name="ans1" value="Bakr">
+                <span class="checkmark">Abu Bakr R.</span>
+            </label>
 
-        <label class="container">2.
-            <input type="checkbox" value="Umar">
-            <span class="checkmark">Umar ibn Al-Khattab R.</span>
-        </label>
+            <label class="container">2.
+                <input type="checkbox" name="ans2" value="Umar">
+                <span class="checkmark">Umar ibn Al-Khattab R.</span>
+            </label>
 
-        <label class="container">3.
-            <input type="checkbox" value="Uthman">
-            <span class="checkmark">Uthman ibn Affan R.</span>
-        </label>
+            <label class="container">3.
+                <input type="checkbox" name="ans3" value="Uthman">
+                <span class="checkmark">Uthman ibn Affan R.</span>
+            </label>
 
-        <label class="container">4.
-            <input type="checkbox" value="Ali">
-            <span class="checkmark">Ali ibn Abi Talib R.</span>
-        </label>
-        
-    </div>
+            <label class="container">4.
+                <input type="checkbox" name="ans4" value="Ali">
+                <span class="checkmark">Ali ibn Abi Talib R.</span>
+            </label>
+            
+        </div>
 
-    <button type="submit" class="btn btn-outline-light">Submit</button>
+    <button type="submit" class="btn btn-outline-light"><a href="{% url 'result' %}">Submit</a></button>
+
+    </form>
+    
 
     <div class="row">
         <div class="col">

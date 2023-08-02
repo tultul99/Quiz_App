@@ -74,34 +74,38 @@
     
     <h1>Question 3</h1>
     
-    
-    <p class="option">3. How many Madina Surah's are there in Quran?</p>
+    <form action="" method="POST">{% csrf_token %}
+
+        <p class="option">3. How many Madina Surah's are there in Quran?</p>
     
     <div class="options">
         
         <label class="container">1.
-            <input type="checkbox" value="22">
+            <input type="checkbox" name="ans1" value="22">
             <span class="checkmark">22</span>
         </label>
 
         <label class="container">2.
-            <input type="checkbox" value="23">
+            <input type="checkbox" name="ans2" value="23">
             <span class="checkmark">23</span>
         </label>
 
         <label class="container">3.
-            <input type="checkbox" value="24">
+            <input type="checkbox" name="ans3" value="24">
             <span class="checkmark">24</span>
         </label>
 
         <label class="container">4.
-            <input type="checkbox" value="25">
+            <input type="checkbox" name="ans4" value="25">
             <span class="checkmark">25</span>
         </label>
         
     </div>
 
     <button type="submit" class="btn btn-outline-light">Submit</button>
+
+    </form>
+    
 
     <div class="row">
         <div class="col">
